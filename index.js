@@ -24,7 +24,7 @@ const io = new Server(server, {
 
 // app.use(cors());
 app.use(cors({
-  origin: 'https://p6l7k2jx-5173.asse.devtunnels.ms', // Frontend URL
+  origin: ['http://localhost:5173', 'https://p6l7k2jx-5173.asse.devtunnels.ms'],
   methods: 'GET, POST, PUT, DELETE'
 }));
 app.use(express.json());
